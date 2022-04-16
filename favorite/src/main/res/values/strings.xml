@@ -1,0 +1,6 @@
+<resources>
+    <string name="label_favorite">Favorite</string>
+    <string name="title_empty">Empty</string>
+    <string name="message_favorite_movie_not_found">Favorite movies not found</string>
+    <string name="message_favorite_tv_show_not_found">Favorite Tv Show not found</string>
+</resources>
