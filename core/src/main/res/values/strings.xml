@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MovieCatalogue</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="label_movie">Movie</string>
+    <string name="label_tv_show">TV Show</string>
+    <string name="label_movie_detail">Movie Detail</string>
+    <string name="label_tv_show_detail">Tv Show Detail</string>
+    <string name="label_search">Search</string>
+    <string name="label_favorite">Favorite</string>
+    <string name="label_search_movie">Search Movie or Tv Show</string>
+    <string name="message_favorite_success">Successfully added to favorite</string>
+    <string name="message_success_remove_favorite">Successfully remove from favorite</string>
+    <string name="title_empty">Empty</string>
+    <string name="message_favorite_movie_not_found">Favorite movies not found</string>
+    <string name="message_favorite_tv_show_not_found">Favorite Tv Show not found</string>
+    <string name="hint_search_movie_or_tv">Search movie or Tv Show</string>
+    <string name="message_result_not_found">Result not found</string>
+</resources>

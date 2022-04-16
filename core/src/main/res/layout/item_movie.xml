@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/dimen_8dp"
+    android:layout_margin="@dimen/dimen_8dp"
+    app:cardElevation="@dimen/dimen_4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_16dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvPoster"
+            android:layout_width="@dimen/dimen_80dp"
+            android:layout_height="@dimen/dimen_80dp"
+            app:cardCornerRadius="@dimen/dimen_8dp"
+            app:cardElevation="0dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgPoster"
+            android:layout_width="@dimen/dimen_80dp"
+            android:layout_height="@dimen/dimen_80dp"
+            android:scaleType="fitXY"
+            tools:src="@color/colorLightGrey"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.appcompat.widget.AppCompatRatingBar
+            android:id="@+id/movieRating"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvMovieTitle"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:theme="@style/RatingBar"
+            android:layout_toEndOf="@+id/cvPoster"
+            android:numStars="5"
+            android:rating="4.2"
+            android:stepSize="0.1" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvMovieRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvMovieTitle"
+            android:layout_marginStart="@dimen/dimen_6dp"
+            android:layout_marginTop="@dimen/dimen_7dp"
+            android:layout_toEndOf="@+id/movieRating"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_text_12sp"
+            tools:text="5.6" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvMovieTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:layout_toEndOf="@+id/cvPoster"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            tools:text="Movie Title" />
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

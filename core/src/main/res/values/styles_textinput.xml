@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BaseRoundedTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="android:layout_marginTop">@dimen/dimen_8dp</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/dimen_12dp</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/dimen_12dp</item>
+        <item name="boxCornerRadiusTopStart">@dimen/dimen_12dp</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/dimen_12dp</item>
+        <item name="hintEnabled">false</item>
+        <item name="boxBackgroundColor">@color/white</item>
+        <item name="boxStrokeColor">@drawable/selector_edit_text_outline_color</item>
+    </style>
+
+</resources>
