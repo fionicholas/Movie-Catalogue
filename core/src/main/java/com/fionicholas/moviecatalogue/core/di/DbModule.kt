@@ -11,7 +11,7 @@ import net.sqlcipher.database.SupportFactory
 val dbModule = module {
 
     single {
-        val passphrase: ByteArray = SQLiteDatabase.getBytes("ghiyats".toCharArray())
+        val passphrase: ByteArray = SQLiteDatabase.getBytes("fionicholas".toCharArray())
         val factory = SupportFactory(passphrase)
         Room.databaseBuilder(
             androidApplication(),
