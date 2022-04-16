@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_movie"
+        android:icon="@drawable/ic_movie"
+        android:title="@string/label_movie" />
+    <item
+        android:id="@+id/menu_tv_show"
+        android:icon="@drawable/ic_tv_show"
+        android:title="@string/label_tv_show" />
+</menu>

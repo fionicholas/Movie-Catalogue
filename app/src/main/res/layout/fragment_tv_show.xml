@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.movie.TvShowFragment">
+
+    <com.kennyc.view.MultiStateView
+        android:id="@+id/msvTvShow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:msv_viewState="loading"
+        app:msv_emptyView="@layout/default_error_layout"
+        app:msv_errorView="@layout/default_error_layout"
+        app:msv_loadingView="@layout/default_loading_layout">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTvShow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        tools:listitem="@layout/item_movie" />
+
+    </com.kennyc.view.MultiStateView>
+</RelativeLayout>

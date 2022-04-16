@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.detail.TvShowDetailActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgBackdropImage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_200dp"
+            android:scaleType="centerCrop"
+            tools:src="@color/colorLightGrey"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvPoster"
+            android:layout_width="@dimen/dimen_100dp"
+            android:layout_height="@dimen/dimen_120dp"
+            app:cardCornerRadius="@dimen/dimen_8dp"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_160dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:cardElevation="0dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgPoster"
+                android:layout_width="@dimen/dimen_100dp"
+                android:layout_height="@dimen/dimen_120dp"
+                android:scaleType="fitXY"
+                tools:src="@mipmap/ic_launcher" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvMovieTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/cvPoster"
+            app:layout_constraintTop_toBottomOf="@+id/imgBackdropImage"
+            tools:text="Movie Title" />
+
+        <androidx.appcompat.widget.AppCompatRatingBar
+            android:id="@+id/movieRating"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/cvPoster"
+            app:layout_constraintTop_toBottomOf="@+id/tvMovieTitle"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:theme="@style/RatingBar"
+            android:numStars="5"
+            android:rating="4.2"
+            android:stepSize="0.1" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvMovieRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvMovieTitle"
+            app:layout_constraintStart_toEndOf="@+id/movieRating"
+            app:layout_constraintTop_toBottomOf="@+id/tvMovieTitle"
+            android:layout_marginStart="@dimen/dimen_6dp"
+            android:layout_marginTop="@dimen/dimen_7dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_text_12sp"
+            tools:text="5.6" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvReleaseDate"
+            app:layout_constraintTop_toBottomOf="@+id/movieRating"
+            android:layout_marginTop="@dimen/dimen_6dp"
+            app:layout_constraintStart_toEndOf="@id/cvPoster"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_text_12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="2020-10-21"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvOverview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/cvPoster"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            tools:text="@tools:sample/lorem"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/favoriteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:background="@drawable/ic_favorite_border"
+            android:elevation="6dp"
+            app:backgroundTint="@color/colorOrange"
+            app:borderWidth="0dp"
+            app:fabSize="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgBackdropImage"
+            app:srcCompat="@drawable/ic_favorite_border"
+            app:tint="@color/white"
+            tools:targetApi="lollipop" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
